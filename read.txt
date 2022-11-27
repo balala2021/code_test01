@@ -1,0 +1,11 @@
+train_place_embedding.py:
+通过小区图片的train pair训练图像的embedding，使用val pair 图像数据校正
+input: train_pair.pickle, val_pair.pickle
+output: image_embedding_.tar
+
+embedding.py:
+根据训练后的模型生所有图像的embeddings
+output: embedding_bj.tar, disc_bj.tar
+
+task.py
+生成每个小区图像embedding，下游任务自定
